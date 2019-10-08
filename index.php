@@ -2,7 +2,7 @@
 <?php require_once __DIR__ . '/Libs/db.php'; ?>
 <?php require_once __DIR__ . '/Libs/util.php'; ?>
 <?php define('__MAIN__', 1); ?>
-<?php error_reporting(E_ALL); ini_set('display_errors', '1'); ?>
+<?php date_default_timezone_set("Asia/Seoul"); ?>
 
 <?php
     $data = json_decode(file_get_contents('php://input'), true);

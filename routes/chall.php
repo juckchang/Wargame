@@ -49,6 +49,7 @@
                             <div style="display: none;" class="challenge-author"><?= $chall['author'] ?></div>
                             <div style="display: none;" class="challenge-description"><?= $chall['description'] ?></div>
                             <div style="display: none;" class="challenge-category"><?= $chall['category'] ?></div>
+                            <div style="display: none;" class="challenge-solvers"><?= getSolvers($chall['no']) ?></div>
                             <?php
                                 foreach($uploads as $upload){
                             ?>
@@ -87,7 +88,11 @@
 <script>
     window.onload = () => {
         $('.chall').on('click', function() {
-            $('.modal-title').html($(this).find('.challenge-title').html() + ' <span style="font-size:12px;">(author : ' + $(this).find('.challenge-author').html() + ')</span>')
+            let solver = parseInt($(this).find('.challenge-solvers').html())
+            let title = $(this).find('.challenge-title').html()
+            title += ' <span style="font-size:14px;">' + (solver == 0 ? 'Not solve yet' : `${solver} solved`) + '</span>'
+            title += ' <span style="font-size:12px;">(author : ' + $(this).find('.challenge-author').html() + ')</span>'
+            $('.modal-title').html(title)
             $('.modal-description').html($(this).find('.challenge-description').html() + '<br><br>')
             if($(this).find('.challenge-upload').length != 0){
                 $(this).find('.challenge-upload').each((idx, item) => {

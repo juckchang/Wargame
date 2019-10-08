@@ -9,8 +9,14 @@
     
     <title> c2w2m2's prob </title>
     <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/main.css?v=<?= random_int(0,10000); ?>">
+    <link rel="stylesheet" href="/static/css/main.css?v=">
     <link rel="stylesheet" href="/static/css/login.css">
+
+    <meta property="og:url" content="https://prob.c2w2m2.com" />
+    <meta property="og:type" content="c2w2m2's prob" />
+    <meta property="og:title" content="c2w2m2's prob" />
+    <meta property="og:description" content="c2w2m2's prob archive?" />
+    <meta property="og:image" content="/static/img/profile.png" />
 </head>
 <body>
     

@@ -50,6 +50,13 @@
         return $res['all'];
     }
 
+    function getSolvers($no){
+        $res = query('select count(*) as cnt from solves where no=:no;',[
+            ':no' => $no
+        ]);
+        return intval($res['val']['cnt']);
+    }
+
     function checkSolved($no){
         $res = query('select count(*) as cnt from solves where id=:id and no=:no;',[
             ':id' => $_SESSION['id'],

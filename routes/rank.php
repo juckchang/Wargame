@@ -41,7 +41,7 @@
                             <td style="text-overflow:ellipsis; overflow:hidden"> <?= $i + 1; ?> </td>
                             <td style="text-overflow:ellipsis; overflow:hidden"> <?= htmlspecialchars($points[$i]['id']); ?> </td>
                             <td style="text-overflow:ellipsis; overflow:hidden"> <?= htmlspecialchars($points[$i]['comment']); ?> </td>
-                            <td style="text-overflow:ellipsis; overflow:hidden"> <?= date("Y-m-d h:i:s", $points[$i]['time']); ?> </td>
+                            <td style="text-overflow:ellipsis; overflow:hidden"> <?= date("Y-m-d H:i:s", $points[$i]['time']); ?> </td>
                             <td style="text-overflow:ellipsis; overflow:hidden"> <?= htmlspecialchars($points[$i]['point']); ?> </td>
                         </tr>
                     <?php } ?>
