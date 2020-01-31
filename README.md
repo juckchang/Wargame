@@ -1,1 +1,1 @@
-prob.c2w2m2.com
+### TRUST CTF 2020
