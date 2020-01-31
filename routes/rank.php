@@ -1,4 +1,5 @@
 <?php if(!defined('__MAIN__')) header('Location: /'); ?>
+<?php if(!checkLogin()) header('Location: /'); ?>
 
 <?php require_once WEBROOT . '/Components/header.php'; ?>
 <?php require_once WEBROOT . '/Components/navbar.php'; ?>
