@@ -35,7 +35,7 @@
         <div class="container">       
             <form>
                 <div class="form-group">
-                    <label for="id">ID</label>
+                    <label for="id">EMAIL</label>
                     <input type="email" class="form-control" aria-describedby="idHelp" placeholder="이메일을 입력해주세요." id="id">
                     <p id="idHelp" class="form-text" style="color: rgb(108, 117, 125); display:none;">이메일을 입력해주세요.</p>
                 </div>

@@ -9,9 +9,7 @@
         <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
             <ul class="navbar-nav" style="font-size: 18px;">
                 <?php if(!isset($_SESSION['id'])) { ?>
-                    <li class="nav-item"><a class="nav-link" href="/rank">Rank</a></li>
                     <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
                 <?php } else { ?>
                     <li class="nav-item"><a class="nav-link" href="/rank">Rank</a></li>
                     <li class="nav-item"><a class="nav-link" href="/chall">Chall</a></li>
