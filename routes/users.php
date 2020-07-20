@@ -12,15 +12,13 @@
                 <thead class="thead-dark">
                     <tr>
                         <th width="5%"> # </th>
-                        <th width="40%"> ID </th>
-                        <th width="55%"> comment </th>
+                        <th width="95%"> Email </th>
                     </tr>
 
                     <?php for($i = 0; $i < count($users); $i++){ ?>
                         <tr>
                             <td style="text-overflow:ellipsis; overflow:hidden"> <?= $i + 1; ?> </td>
                             <td style="text-overflow:ellipsis; overflow:hidden"> <?= htmlspecialchars($users[$i]['id']); ?> </td>
-                            <td style="text-overflow:ellipsis; overflow:hidden"> <?= htmlspecialchars($users[$i]['comment']); ?> </td>
                         </tr>
                     <?php } ?>
 

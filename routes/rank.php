@@ -30,8 +30,7 @@
                 <thead class="thead-dark">
                     <tr>
                         <th width="5%"> # </th>
-                        <th width="25%"> ID </th>
-                        <th width="40%"> comment </th>
+                        <th width="65%"> Email </th>
                         <th width="20%"> last submit </th>
                         <th width="10%"> points </th>
                     </tr>
@@ -41,7 +40,6 @@
                         <tr>
                             <td style="text-overflow:ellipsis; overflow:hidden"> <?= $i + 1; ?> </td>
                             <td style="text-overflow:ellipsis; overflow:hidden"> <?= htmlspecialchars($points[$i]['id']); ?> </td>
-                            <td style="text-overflow:ellipsis; overflow:hidden"> <?= htmlspecialchars($points[$i]['comment']); ?> </td>
                             <td style="text-overflow:ellipsis; overflow:hidden"> <?= date("Y-m-d H:i:s", $points[$i]['time']); ?> </td>
                             <td style="text-overflow:ellipsis; overflow:hidden"> <?= htmlspecialchars($points[$i]['point']); ?> </td>
                         </tr>
