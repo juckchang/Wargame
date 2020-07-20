@@ -7,7 +7,7 @@
         $id = $data['id'];
         $pw = $data['pw'];
         
-        if(strlen($id) > 32){
+        if(strlen($id) > 128){
             die('{"success":0}');
         }
 
@@ -36,8 +36,8 @@
             <form>
                 <div class="form-group">
                     <label for="id">ID</label>
-                    <input type="text" class="form-control" aria-describedby="idHelp" placeholder="아이디를 입력해주세요." id="id">
-                    <p id="idHelp" class="form-text" style="color: rgb(108, 117, 125); display:none;">아이디를 입력해주세요.</p>
+                    <input type="email" class="form-control" aria-describedby="idHelp" placeholder="이메일을 입력해주세요." id="id">
+                    <p id="idHelp" class="form-text" style="color: rgb(108, 117, 125); display:none;">이메일을 입력해주세요.</p>
                 </div>
                 <div class="form-group">
                     <label for="pw">PW</label>
