@@ -7,7 +7,7 @@
 
 <?php
     $data = json_decode(file_get_contents('php://input'), true);
-    $routes = ['login', 'logout', 'register', 'rank', 'chall', 'users'];
+    $routes = ['login', 'logout', 'rank', 'chall', 'users'];
     if(empty($_GET['url'])){
         require_once __DIR__ . '/routes/main.php';
     }else if(in_array($_GET['url'], $routes)){

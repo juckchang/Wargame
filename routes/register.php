@@ -49,6 +49,9 @@
                     <input type="text" class="form-control" aria-describedby="commentHelp" placeholder="한줄소개를 입력해주세요." id="comment">
                     <p id="commentHelp" class="form-text"  style="color: rgb(108, 117, 125); display:none;">한줄소개를  입력해주세요.</p>
                 </div>
+                <hr>
+                
+
                 <button type="button" class="btn btn-primary" id="submit">Submit</button>
                 <p id="loginHelp" class="form-text"  style="color: red; display:none;">회원가입에 실패했어요.</p>
             </form>
