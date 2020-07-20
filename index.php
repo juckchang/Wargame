@@ -3,6 +3,7 @@
 <?php require_once __DIR__ . '/Libs/util.php'; ?>
 <?php define('__MAIN__', 1); ?>
 <?php date_default_timezone_set("Asia/Seoul"); ?>
+<?php error_reporting(0); ?>
 
 <?php
     $data = json_decode(file_get_contents('php://input'), true);

@@ -1,1 +1,1 @@
-### TRUST CTF 2020
+## DIMICTF

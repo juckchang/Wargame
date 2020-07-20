@@ -27,7 +27,7 @@
     }
 
     function getUsers(){
-        $res = query_all('select id from users;');
+        $res = query_all('select * from users;');
         return $res['all'];
     }
 

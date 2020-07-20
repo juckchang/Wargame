@@ -1,5 +1,6 @@
 <?php
-    function query($query, $param=[]){
+	error_reporting(0);
+function query($query, $param=[]){
         $dsn = 'mysql:host=localhost;port=3306;dbname=c2w2m2;charset=utf8';
         try{
             $db = new PDO($dsn, 'app', '[reject]');

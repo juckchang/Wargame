@@ -76,7 +76,7 @@
             <div class="modal-body modal-description"></div>
             <div class="modal-footer" style="justify-content: flex-start">
                 <div class="form-group" style="width:100%">
-                    <input type="text" class="form-control" aria-describedby="flagHelp" placeholder="FLAG{~~~}" id="flag">
+                    <input type="text" class="form-control" aria-describedby="flagHelp" placeholder="DIMI{~~~}" id="flag">
                     <span id="flagHelp" class="form-text" style="color: rgb(108, 117, 125); display:none; font-size: 12px;">플래그를 입력해주세요.</span>
                 </div>
             </div>
@@ -114,7 +114,7 @@
 
         $('#flag').keydown(async function(key) {
             if (key.keyCode == 13) {
-                if(/FLAG{(.*)}/.exec($('#flag').val()) == null){
+                if(/DIMI{(.*)}/.exec($('#flag').val()) == null){
                     $('#flagHelp').html('플래그 형식에 맞춰주세요.')
                     $('#flagHelp').css('color', 'red')
                     $('#flagHelp').css('display', 'inline')
@@ -124,12 +124,12 @@
                         no: $('.modal-no').html(),
                         flag: $('#flag').val()
                     })
-                    console.log(response.data)
                     if(response.data.success){
                         $('#flagHelp').html(response.data.msg)
                         $('#flagHelp').css('color', 'green')
-                        $('#flagHelp').css('display', 'inline')
-                    }else{
+			$('#flagHelp').css('display', 'inline')
+		    	setTimeout(()=>window.location.reload(false), 500)
+		    }else{
                         $('#flagHelp').html(response.data.msg)
                         $('#flagHelp').css('color', 'rgb(108, 117, 125)')
                         $('#flagHelp').css('display', 'inline')
